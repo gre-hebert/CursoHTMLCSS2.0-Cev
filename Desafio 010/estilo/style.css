@@ -31,17 +31,61 @@ body {
     font-family: var(--fonte-padrão);
 }
 
+a.ext {
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+    background-color: var(--cor1);
+    color: black;
+}
+
+a.ext:hover{
+    text-decoration: underline;
+    background-color: var(--cor2);
+}
+
+a.ext::after {
+    content: '\1F517';
+}
+
 header {
+    height: 140px;
+    text-align: center;
     color: white;
-    background-color:  var(--cor4);
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    padding-top: 30px;
 }
 
 header > h1 {
     font-family: var(--fonte-destaque);
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45);
+}
+
+header > p {
+    margin: auto;
+    font-size: 1.2em;
+    max-width: 700px;
+    padding: 10px;
 }
 
 nav {
     background-color: var(--cor5);
+    padding: 10px;
+}
+
+nav > a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav > a:hover {
+    transition: .3s;
+    text-decoration: underline;
+    background-color: var(--cor2);
+    color: var(--cor5);
+    border-radius: 5px;
 }
 
 main {
@@ -51,16 +95,21 @@ main {
     margin-bottom: 20px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    padding: 10px;
+    padding: 30px;
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.45);
 }
 
 main h1 {
+    font-family: var(--fonte-android);
     color: var(--cor5);
 }
 
 main h2 {
+    padding: 5px 0px;
+    text-indent: 10px;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    font-size: 1.2em;
     font-family: var(--fonte-android);
 }
 
@@ -69,12 +118,53 @@ main img {
 }
 
 main img.pequena {
-    width: 50%;
+    max-width: 400px;
     display: block;
     margin: auto;
 }
 
+main p {
+    text-align: justify;
+    text-indent: 30px;
+    margin: 15px 0px;
+    line-height: 2em;
+}
+
+aside {
+    border-radius: 15px;
+    padding: 10px 30px;
+    background-color: var(--cor0);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.45);
+    
+}
+
+aside > h3 {
+    padding: 5px;
+    margin: -10px -30px;
+    border-radius: 15px 15px 0px 0px;
+    text-align: center;
+    background-color: var(--cor3);
+}
+
+aside > ul {
+    columns: 2;
+    list-style-position: inside;
+}    
+
 footer {
+    padding: 5px;
+    text-align: center;
     background-color: var(--cor5);
     color: white;
+
+}
+
+footer a {
+    color: var(--cor1);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
 }
