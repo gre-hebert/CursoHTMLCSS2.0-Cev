@@ -58,6 +58,7 @@ header {
 
 header > h1 {
     font-family: var(--fonte-destaque);
+    font-weight: normal;
     font-size: 3em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45);
 }
@@ -102,6 +103,7 @@ main {
 
 main h1 {
     font-family: var(--fonte-android);
+    font-weight: normal;
     color: var(--cor5);
 }
 
@@ -111,6 +113,7 @@ main h2 {
     background-image: linear-gradient(to right, var(--cor1), transparent);
     font-size: 1.2em;
     font-family: var(--fonte-android);
+    font-weight: normal;
 }
 
 main img {
@@ -123,6 +126,16 @@ main img.pequena {
     margin: auto;
 }
 
+main iframe {
+    display: block;
+    margin: auto;
+    width: 80%;
+    height: 450px;
+    margin-bottom: 20px;
+    border: 6px;
+
+}
+ 
 main p {
     text-align: justify;
     text-indent: 30px;
