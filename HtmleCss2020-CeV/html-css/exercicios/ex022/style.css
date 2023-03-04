@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+body {
+    background-image: url(images/bg.jpg);
+}
+
+div {
+    display: inline-block;
+}
+
+.square {
+    height: 300px;
+    width: 300px;
+    border: 5px solid black;
+}
+
+div#i0 {
+    background-color: rgb(77, 153, 26);
+}
+
+div#i1 {
+    background-image: linear-gradient(to right, red, blue);
+}
+
+div#i2 {
+    background-image: url(images/sq.jpg);
+}
